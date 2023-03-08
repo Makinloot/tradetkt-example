@@ -56,6 +56,10 @@
         font-size: $fs-medium;
         text-transform: uppercase;
 
+        &:hover {
+          color: $clr-whiteFaded;
+        }
+
         &:last-of-type {
           margin-right: 0;
         }

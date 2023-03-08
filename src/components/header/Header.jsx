@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPhone, faEnvelope, faCartShopping } from "@fortawesome/free-solid-svg-icons"
 
@@ -20,20 +21,20 @@ const Header = () => {
               </div>
             </div>
             <div className="header-upper-login flex-row">
-              <a href="#">sign in</a>
+              <Link to="#">sign in</Link>
               <hr />
-              <a href="#">sign up</a>
+              <Link to="#">sign up</Link>
             </div>
           </div>
           <div className="header-main flex-row">
             <h1>TradeTKT</h1>
             <div className="flex-row">
               <nav className="header-main-menu flex-row">
-                <a href="#">home</a>
-                <a href="#">search</a>
-                <a href="#">news</a>
-                <a href="#">about</a>
-                <a href="#">contact</a>
+                <Link to="#">home</Link>
+                <Link to="#">search</Link>
+                <Link to="#">news</Link>
+                <Link to="#">about</Link>
+                <Link to="#">contact</Link>
               </nav>
               <div className="cart flex-row">
                 <strong>0</strong>

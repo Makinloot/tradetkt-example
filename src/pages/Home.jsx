@@ -3,6 +3,7 @@ import { faLocationPin } from '@fortawesome/free-solid-svg-icons'
 
 import Header from '../components/header/Header'
 import Button from '../components/button/Button'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -19,8 +20,12 @@ const Home = () => {
                 dinamo, tbilisi, georgia
               </strong>
               <div className="buttons flex-col">
-                <Button value="purchase tickets now" btnClass="btn-orange" />
-                <Button value="sell tickets now" btnClass="btn-white" />
+                <Link to="#">
+                  <Button value="purchase tickets now" btnClass="btn-orange" />
+                </Link>
+                <Link to="#">
+                  <Button value="sell tickets now" btnClass="btn-white" />
+                </Link>
               </div>
             </div>
           </div>
