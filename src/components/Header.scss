@@ -1,0 +1,73 @@
+@import '../scss/assets/vars';
+
+.header {
+  position: relative;
+  z-index: 100;
+
+  &-wrapper {
+    position: relative;
+  }
+
+  &-upper {
+    justify-content: space-between !important;
+    font-size: $fs-small;
+
+    &-contact {
+      gap: 1rem;
+    }
+
+    &-login {
+      position: relative;
+      text-transform: uppercase;
+      gap: 2rem;
+
+      hr {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+        border: 1px solid green;
+      }
+    }
+  
+    .upper-item {
+      gap: 1rem;
+    }
+  }
+
+  &-main {
+    margin-top: 2rem;
+    justify-content: space-between !important;
+
+    h1 {
+      font-family: $ff-bold;
+      font-size: $fs-big;
+    }
+
+    &-menu {
+
+      a {
+        margin-right: 1rem;
+        font-size: $fs-medium;
+        text-transform: uppercase;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .cart {
+      margin-left: 1.5rem;
+      border: 1px solid;
+      padding: .5rem 2rem;
+      border-radius: 4rem;
+      gap: .5rem;
+    }
+  }
+
+  .header-bottom-line {
+    margin-top: 1.5rem;
+    border: 1px solid;
+  }
+}

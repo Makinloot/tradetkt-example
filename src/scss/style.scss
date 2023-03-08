@@ -1,4 +1,22 @@
-p {
-  font-size: 4rem;
-  font-family: 'roboto';
+@import './assets/vars';
+@import './assets/reset';
+@import './assets/utils';
+
+.home {
+  position: relative;
+  z-index: 10;
+  min-height: 100vh;
+  background-image: url('../assets/bg.webp');
+  background-position: top;
+  background-size: cover;
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+    background: rgb(115,2,98);
+    background: linear-gradient(164deg, rgba(115,2,98,0.7763480392156863) 18%, rgba(144,7,67,0.7063200280112045) 49%);
+  }
 }
