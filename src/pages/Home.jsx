@@ -1,12 +1,32 @@
-import React from 'react'
-import Header from '../components/Header'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationPin } from '@fortawesome/free-solid-svg-icons'
+
+import Header from '../components/header/Header'
+import Button from '../components/button/Button'
 
 const Home = () => {
   return (
-    <div className='home'>
-      <div className="bg"></div>
-      <Header />
-    </div>
+    <>
+      <div className='home'>
+        <div className="bg"></div>
+        <Header />
+        <div className="home-hero">
+          <div className="container">
+            <div className="home-hero-wrapper flex-col">
+              <strong className="title">kayakata on 7 <span>live concert</span></strong>
+              <strong className="location">
+                <FontAwesomeIcon icon={faLocationPin} />
+                dinamo, tbilisi, georgia
+              </strong>
+              <div className="buttons flex-col">
+                <Button value="purchase tickets now" btnClass="btn-orange" />
+                <Button value="sell tickets now" btnClass="btn-white" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   )
 }
 

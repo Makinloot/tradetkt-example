@@ -19,4 +19,36 @@
     background: rgb(115,2,98);
     background: linear-gradient(164deg, rgba(115,2,98,0.7763480392156863) 18%, rgba(144,7,67,0.7063200280112045) 49%);
   }
+
+  &-hero {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    font-family: $ff-bold;
+
+    .title {
+      text-transform: uppercase;
+
+      span {
+        color: $clr-whiteFaded;
+        font-family: $ff-regular;
+        font-weight: 400;
+      }
+    }
+
+    .location {
+      margin: 2rem 1rem;
+      font-size: $fs-small;
+      text-transform: capitalize;
+
+      svg {
+        margin-right: .2rem;
+      }
+    }
+
+    .buttons {
+      gap: 1rem;
+    }
+  }
 }

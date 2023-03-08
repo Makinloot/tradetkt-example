@@ -1,4 +1,4 @@
-@import '../scss/assets/vars';
+@import '../../scss/assets/vars';
 
 .header {
   position: relative;
@@ -20,13 +20,18 @@
       position: relative;
       text-transform: uppercase;
       gap: 2rem;
+      font-family: $ff-bold;
 
       hr {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         height: 100%;
-        border: 1px solid green;
+        border: 1px solid $clr-whiteFaded;
+      }
+
+      a:last-of-type {
+        color: $clr-whiteFaded;
       }
     }
   
@@ -68,6 +73,6 @@
 
   .header-bottom-line {
     margin-top: 1.5rem;
-    border: 1px solid;
+    border: 1px solid $clr-whiteFaded;
   }
 }

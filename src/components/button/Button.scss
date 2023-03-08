@@ -1,0 +1,28 @@
+@import '../../scss/assets/vars';
+
+%btn {
+  text-transform: uppercase;
+  color: $clr-white;
+  border: none;
+  cursor: pointer;
+}
+
+%btn-oval {
+  @extend %btn;
+  padding: 1.2rem 2.3rem;
+  border-radius: 2rem;
+  border: 2px solid $clr-orange;
+  font-size: $fs-medium;
+  width: 100%
+}
+
+.btn-orange {
+  @extend %btn-oval;
+  background-color: $clr-orange;
+}
+
+.btn-white {
+  @extend %btn-oval;
+  background-color: $clr-white;
+  color: $clr-orange;
+}

@@ -20,9 +20,9 @@ const Header = () => {
               </div>
             </div>
             <div className="header-upper-login flex-row">
-              <span>sign in</span>
+              <a href="#">sign in</a>
               <hr />
-              <span>sign up</span>
+              <a href="#">sign up</a>
             </div>
           </div>
           <div className="header-main flex-row">
