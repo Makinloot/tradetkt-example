@@ -1,4 +1,4 @@
-@import '../../scss/assets/vars';
+@import "../../scss/assets/vars";
 
 %btn {
   text-transform: uppercase;
@@ -13,7 +13,10 @@
   border-radius: 2rem;
   border: 2px solid $clr-orange;
   font-size: $fs-medium;
-  width: 100%
+  width: 100%;
+  box-shadow: 0px 0px 31px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 31px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 31px -6px rgba(0, 0, 0, 0.75);
 }
 
 .btn-orange {

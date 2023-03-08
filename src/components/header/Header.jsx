@@ -12,11 +12,11 @@ const Header = () => {
           <div className="header-upper flex-row">
             <div className="header-upper-contact flex-row">
               <div className="upper-item flex-row">
-                <FontAwesomeIcon icon={faPhone} color="green" />
+                <FontAwesomeIcon icon={faPhone} />
                 <span>(+995) 555 667788</span>
               </div>
               <div className="upper-item flex-row">
-                <FontAwesomeIcon icon={faEnvelope} color="green" />
+                <FontAwesomeIcon icon={faEnvelope} />
                 <span>tickets@ticket.ge</span>
               </div>
             </div>
@@ -30,8 +30,8 @@ const Header = () => {
             <h1>TradeTKT</h1>
             <div className="flex-row">
               <nav className="header-main-menu flex-row">
-                <Link to="#">home</Link>
-                <Link to="#">search</Link>
+                <Link to="/">home</Link>
+                <Link to="/search">search</Link>
                 <Link to="#">news</Link>
                 <Link to="#">about</Link>
                 <Link to="#">contact</Link>

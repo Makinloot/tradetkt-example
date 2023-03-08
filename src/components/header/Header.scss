@@ -14,6 +14,10 @@
 
     &-contact {
       gap: 1rem;
+
+      svg {
+        color: rgb(115, 165, 115);
+      }
     }
 
     &-login {
