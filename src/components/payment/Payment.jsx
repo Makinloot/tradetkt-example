@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { faPaypal } from '@fortawesome/free-brands-svg-icons'
 import { faCreditCard } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom'
 
 import Form from './Form'
 import Button from '../button/Button'
@@ -32,7 +33,9 @@ const Payment = () => {
       </div>
       <Form />
       <div className="buttons flex-row">
-        <Button value="cancel" btnClass="btn-white" />
+        <Link to="/search">
+          <Button value="cancel" btnClass="btn-white" />
+        </Link>
         <Button value="confirm-payment" btnClass="btn-orange" />
       </div>
     </div>

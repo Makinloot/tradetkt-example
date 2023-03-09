@@ -3,6 +3,7 @@ import Slider from '../../components/slider/Slider'
 
 import { tickets } from "../../data"
 import './Search.scss'
+import Header from "../../components/header/Header"
 
 const Search = () => {
 
@@ -14,6 +15,7 @@ const Search = () => {
 
   return (
     <div className="search">
+      <Header headerClass="dark" />
       <div className="container">
         <div className="search-wrapper">
           <div className="months">

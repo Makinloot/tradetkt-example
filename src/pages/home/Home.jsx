@@ -25,7 +25,7 @@ const Home = () => {
                 <Link to="/search">
                   <Button value="purchase tickets now" btnClass="btn-orange" />
                 </Link>
-                <Link to="#">
+                <Link to="/sell">
                   <Button value="sell tickets now" btnClass="btn-white" />
                 </Link>
               </div>
