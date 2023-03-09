@@ -4,6 +4,7 @@
   margin: 5rem 0;
 
   &-method {
+    flex-wrap: wrap;
     gap: 2rem;
     color: $clr-lightGrey;
 
@@ -28,10 +29,17 @@
   }
 
   .buttons {
+    display: grid;
+    grid-template-columns: 50% 50%;
     width: 600px;
     max-width: 100%;
     margin: 0 auto;
     gap: 1rem;
+    padding: 1rem;
+
+    @media (max-width: 550px) {
+      grid-template-columns: 1fr;
+    }
     
     a {
       width: 100%;

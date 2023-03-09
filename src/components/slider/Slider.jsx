@@ -30,7 +30,17 @@ export default function App() {
         spaceBetween={0}
         navigation={true}
         modules={[Navigation]}
-        slidesPerView={7}
+        slidesPerView={2}
+        breakpoints={{
+          768: {
+            width: 768,
+            slidesPerView: 4,
+          },
+          1000: {
+            width: 1000,
+            slidesPerView: 7,
+          }
+        }}
         centeredSlides
         centeredSlidesBounds
         loop

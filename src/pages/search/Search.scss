@@ -13,3 +13,23 @@
     margin: 0 auto;
   }
 }
+
+@media (max-width: 1000px) {
+  .search {
+
+    .tickets {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .search {
+
+    .tickets {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 250px);
+    }
+  }
+}

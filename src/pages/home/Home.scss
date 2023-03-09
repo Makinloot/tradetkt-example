@@ -55,3 +55,11 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .home {
+    &-hero button {
+      font-size: $fs-small;
+    }
+  }
+}
