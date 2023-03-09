@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPhone, faEnvelope, faCartShopping } from "@fortawesome/free-solid-svg-icons"
 
 import './Header.scss'
+import Burger from "./Burger"
 
 const Header = ({ headerClass }) => {
   return (
@@ -28,7 +29,7 @@ const Header = ({ headerClass }) => {
           </div>
           <div className="header-main flex-row">
             <h1>TradeTKT</h1>
-            <div className="flex-row">
+            <div className="nav-container flex-row">
               <nav className="header-main-menu flex-row">
                 <Link to="/">home</Link>
                 <Link to="/search">search</Link>
@@ -41,6 +42,7 @@ const Header = ({ headerClass }) => {
                 <FontAwesomeIcon icon={faCartShopping} />
               </div>
             </div>
+            <Burger />
           </div>
           <hr className="header-bottom-line" />
         </div>
