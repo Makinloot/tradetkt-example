@@ -124,3 +124,49 @@ export const sliderData = [
     year: 2022
   },
 ]
+
+import male from './assets/user-male.png'
+import female from './assets/user-female.png'
+
+export const rowTickets = [
+  {
+    date: '1 Oct. 21',
+    status: 'verified',
+    customer: 'giorgi maisuradze',
+    purchased: 'ZEG Tbilisi Storytelling Festival',
+    price: '40₾',
+    icon: male
+  },
+  {
+    date: '12 Oct. 21',
+    status: 'unverified',
+    customer: 'natalia partskhaidze',
+    purchased: 'ZEG Tbilisi Storytelling Festival',
+    price: '50₾',
+    icon: female
+  },
+  {
+    date: '1 Nov. 21',
+    status: 'verified',
+    customer: 'tamta davitaia',
+    purchased: 'ZEG Tbilisi Storytelling Festival',
+    price: '50₾',
+    icon: female
+  },
+  {
+    date: '19 Oct. 21',
+    status: 'verified',
+    customer: 'travis head',
+    purchased: 'ZEG Tbilisi Storytelling Festival',
+    price: '60₾',
+    icon: male
+  },
+  {
+    date: '1 Oct. 21',
+    status: 'verified',
+    customer: 'nino kurashvili',
+    purchased: 'ZEG Tbilisi Storytelling Festival',
+    price: '70₾',
+    icon: female
+  },
+]

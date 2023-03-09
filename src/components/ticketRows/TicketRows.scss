@@ -1,0 +1,80 @@
+@import '../../scss/assets/vars';
+
+.row-wrapper {
+  width: 1920px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  overflow: hidden;
+  overflow-x: visible;
+
+  &::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+  &::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+  &::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+}
+
+.row-container {
+  width: 1920px;
+  display: grid;
+  grid-template-columns: 1fr .5fr 1fr 1fr .5fr .5fr;
+  // padding: 0 .5rem;
+  border: 1px solid $clr-lightGrey;
+  color: $clr-black;
+
+  .heading {
+    margin-left: .5rem;
+    font-family: $ff-bold;
+    text-transform: capitalize;
+    line-height: 2;
+    border-right: 1px solid $clr-lightGrey;
+
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+
+  .row-item {
+    padding: .5rem 0 1rem;
+    border-right: 1px solid $clr-lightGrey;
+    border-bottom: 1px solid $clr-lightGrey;
+    justify-content: flex-start !important;
+    gap: .5rem;
+    text-transform: capitalize;
+
+    span {
+      padding-left: .5rem;
+    }
+
+    img {
+      max-width: 24px;
+      margin-left: .5rem;
+    }
+    
+    svg {
+      margin-left: .5rem;
+    }
+
+    button {
+      margin-left: .5rem;
+    }
+
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+}

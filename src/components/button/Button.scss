@@ -41,3 +41,11 @@
   max-width: 600px;
   text-transform: capitalize;
 }
+
+.btn-green {
+  @extend %btn;
+  background-color: rgb(53, 199, 53);
+  padding: .5rem 1rem;
+  border-radius: 4px;
+  max-width: 100%;
+}

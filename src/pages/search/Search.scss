@@ -6,11 +6,25 @@
   .tickets {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
+    // grid-template-rows: 1fr 1fr;
     width: 1200px;
     height: 600px;
     max-width: 100%;
     margin: 0 auto;
+  }
+
+  .purchase-title {
+    margin: 4rem 0 2rem;
+    font-size: $fs-big;
+    text-transform: capitalize;
+    color: $clr-black;
+    text-align: center;
+  }
+
+  .btn-blue {
+    display: block;
+    width: auto;
+    margin: 0 auto 0rem;
   }
 }
 
@@ -19,7 +33,7 @@
 
     .tickets {
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(3, 1fr);
+      // grid-template-rows: repeat(3, 1fr);
     }
   }
 }
@@ -29,7 +43,7 @@
 
     .tickets {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(6, 250px);
+      height: 200vh;
     }
   }
 }
