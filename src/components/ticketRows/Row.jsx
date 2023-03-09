@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle, faX } from "@fortawesome/free-solid-svg-icons";
 
 import Button from "../button/Button";
+import { Link } from "react-router-dom";
 
 const Row = ({ date, status, customer, purchased, price, icon }) => {
   return (
@@ -24,7 +25,9 @@ const Row = ({ date, status, customer, purchased, price, icon }) => {
         <span>{price}</span>
       </div>
       <div className="row-item flex-row">
-        <Button value="buy" btnClass="btn-green" />
+        <Link to="/transaction">
+          <Button value="buy" btnClass="btn-green" />
+        </Link>
       </div>
     </>
   );
