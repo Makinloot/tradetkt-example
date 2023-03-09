@@ -1,0 +1,48 @@
+@import "../../scss/assets/vars";
+
+.input-field {
+  position: relative;
+  margin: .5rem 0;
+  align-items: flex-start !important;
+  color: $clr-black;
+
+  label {
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+  }
+
+  input {
+    padding: 0.7rem 1rem;
+    border: 1px solid $clr-lightGrey;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+
+  }
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  ::placeholder {
+    color: $clr-lightGrey;
+  }
+
+  .icon {
+    position: absolute;
+    right: .5rem;
+    top: 2.9rem;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+
+    svg {
+      font-size: 10px;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom'
 import Button from '../button/Button'
 import './Ticket.scss'
 
@@ -16,7 +16,9 @@ const Ticket = ({ day, month, year, title, location, background }) => {
           <h4>{title}</h4>
           <span>{location}</span>
         </div>
-        <Button value="get ticket" btnClass="btn-orange" />
+        <Link to="/transaction">
+          <Button value="get ticket" btnClass="btn-orange" />
+        </Link>
       </div>
       <div className="bottom-shadow"></div>
     </div>

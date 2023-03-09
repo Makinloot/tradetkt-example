@@ -61,3 +61,66 @@ export const tickets = [
     background: nations
   },
 ]
+
+export const sliderData = [
+  {
+    id: 1,
+    month: 'january',
+    year: 2022
+  },
+  {
+    id: 2,
+    month: 'february',
+    year: 2022
+  },
+  {
+    id: 3,
+    month: 'march',
+    year: 2022
+  },
+  {
+    id: 4,
+    month: 'april',
+    year: 2022
+  },
+  {
+    id: 5,
+    month: 'may',
+    year: 2022
+  },
+  {
+    id: 6,
+    month: 'june',
+    year: 2022
+  },
+  {
+    id: 7,
+    month: 'july',
+    year: 2022
+  },
+  {
+    id: 8,
+    month: 'august',
+    year: 2022
+  },
+  {
+    id: 9,
+    month: 'september',
+    year: 2022
+  },
+  {
+    id: 10,
+    month: 'october',
+    year: 2022
+  },
+  {
+    id: 11,
+    month: 'november',
+    year: 2022
+  },
+  {
+    id: 12,
+    month: 'december',
+    year: 2022
+  },
+]

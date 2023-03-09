@@ -1,0 +1,55 @@
+@import '../../scss/assets/vars';
+
+.slider {
+  width: 1200px;
+  max-width: 100%;
+  padding: .5rem;
+  padding: 1rem 0;
+  margin: 2rem auto;
+
+  .swiper-wrapper {
+    padding: .5rem 2rem;
+  }
+
+  .slide {
+    position: relative;
+    padding: 4rem 2rem;
+    gap: 2rem;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: $clr-white;
+    transition: 450ms;
+    cursor: pointer;
+
+    &.swiper-slide-active {
+      scale: 1.05;
+      z-index: 100;
+      border-left: 1px solid #ccc;
+      span {
+        color: $clr-black;
+      }
+    }
+
+    // &:first-of-type {
+    //   border-left: 1px solid #ccc;
+    // }
+    
+    span {
+      text-transform: uppercase;
+      color: #ccc;
+
+      &:first-of-type {
+        font-size: $fs-medium + .5rem;
+      }
+    }
+
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    z-index: 1000;
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+}

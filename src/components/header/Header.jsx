@@ -4,9 +4,9 @@ import { faPhone, faEnvelope, faCartShopping } from "@fortawesome/free-solid-svg
 
 import './Header.scss'
 
-const Header = () => {
+const Header = ({ headerClass }) => {
   return (
-    <header className="header">
+    <header className={headerClass ? 'header dark' : 'header'}>
       <div className="container">
         <div className="header-wrapper">
           <div className="header-upper flex-row">

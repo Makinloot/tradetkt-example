@@ -1,7 +1,7 @@
-body {
-  background-color: black;
-}
+@import '../../scss/assets/vars';
+
 .search {
+  margin: 0 0 4rem;
 
   .tickets {
     display: grid;

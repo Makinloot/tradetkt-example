@@ -1,4 +1,5 @@
 import Ticket from "../../components/ticket/Ticket"
+import Slider from '../../components/slider/Slider'
 
 import { tickets } from "../../data"
 import './Search.scss'
@@ -15,6 +16,9 @@ const Search = () => {
     <div className="search">
       <div className="container">
         <div className="search-wrapper">
+          <div className="months">
+            <Slider />
+          </div>
           <div className="tickets">
             {handleTickets()}
           </div>

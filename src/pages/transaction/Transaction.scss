@@ -1,0 +1,25 @@
+@import '../../scss/assets/vars';
+
+.transaction {
+
+  &-title {
+    position: relative;
+    padding: 3rem 0;
+    text-align: center;
+
+    h2 {
+      color: $clr-lightGrey;
+      font-size: $fs-big;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    hr {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border: 1px solid $clr-lightGrey;
+    }
+  }
+}

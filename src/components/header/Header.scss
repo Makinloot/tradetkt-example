@@ -1,8 +1,39 @@
-@import '../../scss/assets/vars';
+@import "../../scss/assets/vars";
 
 .header {
   position: relative;
   z-index: 100;
+
+  &.dark {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 18%,
+      rgba(38, 38, 38, 1) 26%
+    );
+    box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.75);
+
+    hr {
+      opacity: 0;
+    }
+
+    .header-upper-login {
+
+      a:first-of-type {
+        color: $clr-orange;
+      }
+    }
+
+    .cart {
+      border: 1px solid $clr-orange;
+    }
+
+    .header-upper-contact svg {
+      color: $clr-orange;
+    }
+  }
 
   &-wrapper {
     position: relative;
@@ -38,7 +69,7 @@
         color: $clr-whiteFaded;
       }
     }
-  
+
     .upper-item {
       gap: 1rem;
     }
@@ -54,7 +85,6 @@
     }
 
     &-menu {
-
       a {
         margin-right: 1rem;
         font-size: $fs-medium;
@@ -73,9 +103,9 @@
     .cart {
       margin-left: 1.5rem;
       border: 1px solid;
-      padding: .5rem 2rem;
+      padding: 0.5rem 2rem;
       border-radius: 4rem;
-      gap: .5rem;
+      gap: 0.5rem;
     }
   }
 
